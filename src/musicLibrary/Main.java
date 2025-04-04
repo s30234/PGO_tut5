@@ -3,8 +3,7 @@ package musicLibrary;
 
 public class Main {
     public static void main(String[] args) {
-        MusicLibrary myLibrary = new MusicLibrary("Rock Collection",
-                "John Smith");
+        MusicLibrary myLibrary = new MusicLibrary("Rock Collection", "John Smith");
 
         // Add tracks to the library
         myLibrary.addTrack("Led Zeppelin - Stairway to Heaven");
@@ -21,13 +20,10 @@ public class Main {
         myLibrary.createPlaylist("Party");
 
         // Add tracks to playlists
-        myLibrary.addTrackToPlaylist("Queen - Bohemian Rhapsody",
-                "Favorites");
-        myLibrary.addTrackToPlaylist("Pink Floyd - Comfortably Numb",
-                "Favorites");
+        myLibrary.addTrackToPlaylist("Queen - Bohemian Rhapsody", "Favorites");
+        myLibrary.addTrackToPlaylist("Pink Floyd - Comfortably Numb", "Favorites");
         myLibrary.addTrackToPlaylist("AC/DC - Back in Black", "Party");
-        myLibrary.addTrackToPlaylist("Metallica - Nothing Else Matters",
-                "Party");
+        myLibrary.addTrackToPlaylist("Metallica - Nothing Else Matters", "Party");
 
         // Display all playlists
         myLibrary.displayAllPlaylists();
@@ -44,10 +40,7 @@ public class Main {
         // Check if the track was removed from the playlist
         myLibrary.displayPlaylist("Party");
 
-        System.out.println("Total number of tracks in the library: " +
-                myLibrary.getTrackCount());
-        System.out.println("Total number of playlists: " +
-                myLibrary.getPlaylistCount());
+        System.out.println("Total number of tracks in the library: " + myLibrary.getTrackCount());
+        System.out.println("Total number of playlists: " + myLibrary.getPlaylistCount());
     }
-}
 }
